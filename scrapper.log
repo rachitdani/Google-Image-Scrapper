@@ -1,0 +1,11 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.18.0.36:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.2 - - [07/Jul/2023 19:51:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [07/Jul/2023 19:51:58] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [07/Jul/2023 19:51:58] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [07/Jul/2023 19:52:06] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [07/Jul/2023 19:52:17] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.2 - - [07/Jul/2023 19:52:26] "POST /review HTTP/1.1" 200 -
