@@ -65,7 +65,7 @@ def index():
                     review_col.insert_many(img_data)   
      
 
-                    return "image laoded"
+                    return "image loaded in mongodb database"
                 except Exception as e:
                     logging.info(e)
                     return 'something is wrong'
