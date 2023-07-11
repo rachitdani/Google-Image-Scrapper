@@ -59,7 +59,7 @@ def index():
                                 with open(os.path.join(save_directory, f"{query}_{image_tags.index(image_tag)}.jpg"), "wb") as f:
                                     f.write(image_data)
                     
-                    client = pymongo.MongoClient("mongodb+srv://rachitdani19:rachitdani@cluster0.t7wy4vx.mongodb.net/")
+                    client = pymongo.MongoClient("mongodb+srv://rachitdani19:mongodb@cluster0.t7wy4vx.mongodb.net/")
                     db = client['image_scrap']
                     review_col = db['image_scrap_data']
                     review_col.insert_many(img_data)   
