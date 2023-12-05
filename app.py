@@ -59,7 +59,7 @@ def index():
                                 with open(os.path.join(save_directory, f"{query}_{image_tags.index(image_tag)}.jpg"), "wb") as f:
                                     f.write(image_data)
                     
-                    client = pymongo.MongoClient("mongodb+srv://rachitdani19:mongodb@cluster0.t7wy4vx.mongodb.net/")
+                    client = pymongo.MongoClient("Replace [] with your Mongodb Detials[mongodb+srv://rachitdani19:mongodb@cluster0.t7wy4vx.mongodb.net/]")
                     db = client['image_scrap']
                     review_col = db['image_scrap_data']
                     review_col.insert_many(img_data)   
@@ -69,7 +69,6 @@ def index():
                 except Exception as e:
                     logging.info(e)
                     return 'something is wrong'
-            # return render_template('results.html')
 
     else:
         return render_template('index.html')
